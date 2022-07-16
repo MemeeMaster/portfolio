@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e92bc9f39f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./dist/app.js" defer></script>
+    <title>Jakub Wroński</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-wrapper">
+            <a class="nav__link" href="#work">work</a>
+            <a class="nav__link" href="#experience">experience</a>
+            <a class="nav__link" href="#skills">skills</a>
+            <a class="nav__link" href="#aboutme">about me</a>
+            <a class="nav__link" href="#contact">contact</a>
+        </div>
+        <div class="nav__mobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav__mobile-screen hide-nav">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="nav__mobile-screen-link" href="#work">work</a>
+            <a class="nav__mobile-screen-link" href="#experience">experience</a>
+            <a class="nav__mobile-screen-link" href="#skills">skills</a>
+            <a class="nav__mobile-screen-link" href="#aboutme">about me</a>
+            <a class="nav__mobile-screen-link" href="#contact">contact</a>
+        </div>
+    </div>
+    <div class="header header-spacer">
+        <div class="header__block wrapper">
+            <p class="header__block-p">Hello, my name is</p>
+            <h1 class="header__block-name">Jakub Wroński.</h1>
+            <p class="header__block-desc">I am beginner front-end developer with great ambitions. I am currently looking
+                for my first job / internship to keep developing.</p>
+            <a href="#work">
+                <button class="header__block-btn">Check out my work!</button>
+            </a>
+        </div>
+    </div>
+    <div class="work" id="work">
+        <h2 class="work__title">Work</h2>
+        <div class="work__container wrapper">
+            <div class="work__container-btns">
+                <button class="work__container-btns-btn sites button button--selected">Sites</button>
+                <button class="work__container-btns-btn apps button">Apps</button>
+            </div>
+            <div class="work__container-sites">
+                <div class="work__container-sites-item">
+                    <div class="work__container-sites-item-img">
+                        <img src="./img/projects/gamerinc.png" alt="Photo of Gamer Inc. website">
+                    </div>
+                    <p class="work__container-sites-item-title">Gamer Inc.</p>
+                    <p class="work__container-sites-item-desc">Gamer Inc. is a website designed for video games company.
+                        I used nice SVG graphics for transitions between sections. Designed using flexbox.</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="work__container-sites-item">
+                    <div class="work__container-sites-item-img">
+                        <img src="./img/projects/dogstakeaway.png" alt="Photo of DogsTakeAway website">
+                    </div>
+                    <p class="work__container-sites-item-title">DogsTakeAway</p>
+                    <p class="work__container-sites-item-desc">This website is for dog shelter. It was designed using a
+                        flexbox and grid.</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Vanilla JavaScript</li>
+                    </ul>
+                </div>
+                <div class="work__container-sites-item">
+                    <div class="work__container-sites-item-img">
+                        <img src="./img/projects/partylovers.png" alt="Photo of PartyLovers website">
+                    </div>
+                    <p class="work__container-sites-item-title">PartyLovers</p>
+                    <p class="work__container-sites-item-desc">This is my first bigger project. It is written in polish.
+                        Website presents offer of the company organising social events. Designed using flexbox.</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Vanilla JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__container-apps">
+                <div class="work__container-apps-item">
+                    <div class="work__container-apps-item-img">
+                        <img src="./img/projects/recipeapp.png" alt="Photo of RecipeApp">
+                    </div>
+                    <p class="work__container-apps-item-title">RecipeApp</p>
+                    <p class="work__container-apps-item-desc">I used API to create this website. Enter what you are
+                        looking for and choose matching result. Since I can't publish my API Key, you can get your own
+                        and check if it is working by yourself. It's completely free!</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>TypeScript</li>
+                        <li><a href="https://spoonacular.com/food-api" target="_blank">Spoonacular API</a></li>
+                    </ul>
+                </div>
+                <div class="work__container-sites-item">
+                    <div class="work__container-apps-item-img">
+                        <img src="./img/projects/notes.png" alt="Photo of YourNotes App">
+                    </div>
+                    <p class="work__container-apps-item-title">YourNotes</p>
+                    <p class="work__container-apps-item-desc">Simple app handling your 'sticky' notes. It is using drag
+                        & drop.</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="work__container-apps-item">
+                    <div class="work__container-apps-item-img">
+                        <img src="./img/projects/casino.png" alt="Photo of Casino Machine App">
+                    </div>
+                    <p class="work__container-apps-item-title">Casino Machine</p>
+                    <p class="work__container-apps-item-desc">I made this app just for fun! It is a replica of a casino
+                        slot machine.</p>
+                    <p class="work__container-sites-item-heading">Technologies used:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Vanilla JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience" id="experience">
+        <div class="experience__shadow"></div>
+        <div class="experience__container wrapper">
+            <div class="experience__container-title">Experience</div>
+            <p class="experience__container-desc">I am currently looking for my first job / internship. I don't have
+                experience in this industry, but I am very keen to cooperate and gain some competence. Here is a list of
+                the courses that I have completed:</p>
+            <div class="experience__container-block">
+                <div class="experience__container-block-list">
+                    <ul>
+                        <li class="course"><a href="https://mmcschool.pl/kursy/kurs-tworzenia-stron-www-cz-1.html"
+                                target="_blank">[2021] Kurs Tworzenia Stron WWW cz. I - HTML, CSS, RWD</a></li>
+                        <li class="course"><a href="https://mmcschool.pl/kursy/kurs-tworzenia-stron-www-cz-2.html"
+                                target="_blank">[2021] Kurs Tworzenia Stron WWW cz. II - SASS, JS, Bootstrap
+                            </a></li>
+                        <li class="course"><a href="https://mmcschool.pl/kursy/kurs-tworzenia-stron-www-cz-3.html"
+                                target="_blank">Kurs Tworzenia Stron WWW cz. 3</a></li>
+                        <li class="course"><a href="https://mmcschool.pl/kursy/kurs-javascript.html"
+                                target="_blank">[2021] JavaScript - Jedyny Kurs, Którego Potrzebujesz!
+                            </a></li>
+                        <li class="course"><a href="https://mmcschool.pl/kursy/kurs-10-projektow-w-javascript-cz1.html"
+                                target="_blank">[2021] 10 projektów w czystym JavaScript
+                            </a></li>
+                        <li class="course"><a href="https://www.udemy.com/course/understanding-typescript/"
+                                target="_blank">Understanding TypeScript - 2022 Edition
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="skills__block wrapper">
+            <h2 class="skills__block-title">Skills</h2>
+            <div class="skills__block-tabs">
+                <div class="skills__block-tabs-tab button">
+                    <p>HTML</p>
+                </div>
+                <div class="skills__block-tabs-tab button button--selected">
+                    <p>CSS</p>
+                </div>
+                <div class="skills__block-tabs-tab button">
+                    <p>SCSS</p>
+                </div>
+                <div class="skills__block-tabs-tab button">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skills__block-tabs-tab button">
+                    <p>TypeScript</p>
+                </div>
+            </div>
+            <div class="skills__block-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="aboutme">
+        <div class="wrapper">
+            <p class="about__subtitle subtitle">Some information</p>
+            <h2 class="about__title title">About me</h2>
+            <div class="about__block">
+                <div class="about__block-desc">
+                    <p>Hello! My name is Jakub, I am twenty years old and I am from Poland! I started my front-end
+                        adventure in 2021 for purely school purposes. This knowledge was to be useful for me to pass an
+                        exams, but it gave me so much fun that I stayed with front-end longer. In my spare time, I am an
+                        amateur player of chess, basketball and video games. As a novice developer, my immediate goal is
+                        to learn React and master TypeScript.</p>
+                </div>
+                <img class="about__block-img" src="./img/images/mypic-removebg-preview.png" alt="My photo.">
+            </div>
+        </div>
+    </div>
+    <div class="spacer layer2"></div>
+    <div class="contact" id="contact">
+        <div class="wrapper">
+            <h2 class="contact__title">Contact</h2>
+            <div class="contact__desc">If you want to cooperate, feel free to contact me</div>
+            <div class="contact__block">
+                <div><i class="fa-solid fa-phone"></i> +48 889 329 902</div>
+                <div><i class="fa-solid fa-envelope"></i> jwjob@wp.pl</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Designed by Jakub Wroński.</p>
+    </div>
+</body>
+
+</html>
